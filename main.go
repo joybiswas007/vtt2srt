@@ -77,7 +77,7 @@ func vtt2srt(vttPath string) error {
 		}
 		lineCount++
 
-		//delete first line if it contains empty space
+		//ignore first line if its empty
 		if lineCount == 1 {
 			if strings.TrimSpace(line) == "" {
 				continue
